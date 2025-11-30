@@ -1,0 +1,248 @@
+/* 1. RESET (Pembersih) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Abu abu muda banget */
+}
+
+/* 2. STYLE NAVIGASI (SI BUNGKUS LUAR) */
+.wadah-navigasi {
+    background-color: #000000; /* Hitam legam */
+    padding: 20px 0; /* Tebal dikit */
+    color: white;
+}
+
+/* 3. PEMBUNGKUS UTAMA (SI CONTAINER TENGAH) */
+.pembungkus-utama {
+    width: 90%;          /* Lebarnya 90% layar */
+    max-width: 1200px;   /* Tapi mentok di 1200px jangan lebar2 teuing */
+    margin: 0 auto;      /* Posisikan di tengah layar */
+    
+    /* AKTIFKAN MANTRA POSISI */
+    display: flex;       /* Baris ke samping */
+    justify-content: space-between; /* Mentok Kiri & Mentok Kanan */
+    align-items: center; /* Rata tengah vertikal */
+}
+
+/* 4. STYLE MENU KANAN */
+.menu-kanan {
+    list-style: none; /* Hilangin titik-titik list */
+    display: flex;    /* Menu didalamnya juga harus ke samping */
+    gap: 20px;        /* Jarak antar menu */
+}
+
+.menu-kanan a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.logo-saya {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4CAF50; /* Hijau matrix */
+}
+
+/* --- HERO SECTION --- */
+
+/* Latar Belakang Gelap */
+.seksi-hero {
+    background-color: #1a1a1a; /* Abu Gelap hampir hitam */
+    color: white;              /* Tulisan putih */
+    height: 90vh;              /* 90% Tinggi Layar */
+    display: flex;             /* Biar bisa nengahin isinya vertikal */
+    align-items: center;       /* Rata tengah atas-bawah */
+}
+
+/* Tata Letak Kiri-Kanan */
+.tata-letak-hero {
+    display: flex;       /* Aktifkan Flexbox buat dua kolom */
+    align-items: center; /* Teks & Foto sejajar di tengah garis pinggang */
+    gap: 50px;           /* Jarak Teks ke Foto */
+}
+
+/* PENGATURAN KOLOM (Bagi Dua Rata) */
+.area-teks {
+    flex: 1; /* Dapat jatah 1 */
+}
+
+.area-foto {
+    flex: 1; /* Dapat jatah 1 */
+    text-align: center; /* Foto di tengah areanya */
+}
+
+/* --- PERCANTIK FONT --- */
+.salam {
+    color: #4CAF50; /* Hijau */
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 48px; /* Judul Gede */
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.deskripsi {
+    color: #cccccc; /* Abu terang dikit */
+    margin-bottom: 30px;
+    line-height: 1.6; /* Jarak antar baris */
+}
+
+/* --- PERCANTIK TOMBOL --- */
+.tombol-hijau {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none; /* Hilang garis bawah */
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.tombol-hijau:hover {
+    background-color: #45a049; /* Hijau agak gelap pas mouse lewat */
+}
+
+/* --- FOTO PROFIL BULAT --- */
+.foto-bulat {
+    width: 350px;       /* Ukuran Foto */
+    height: 350px;      /* Harus sama biar bunder */
+    object-fit: cover;  /* Pangkas foto biar gak gepeng */
+    border-radius: 50%; /* JADI BUNDER */
+    border: 5px solid #4CAF50; /* Bingkai Hijau */
+    box-shadow: 0 0 20px rgba(76, 175, 80, 0.5); /* Efek Cahaya Glowing */
+}
+
+.foto-bulat:hover {
+    box-shadow: 0 0 30px rgba(76, 175, 80, 0.8); /* Glowing lebih terang pas hover */
+}
+
+/* --- SEKSI KARYA --- */
+
+.seksi-karya {
+    background-color: #252525; /* Agak lebih terang dikit dari Hero biar beda */
+    padding: 80px 0; /* Jarak napas atas bawah */
+    color: white;
+}
+
+.judul-seksi {
+    text-align: center; /* Judul di tengah */
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: #4CAF50;
+    border-bottom: 2px solid #4CAF50; /* Garis bawah judul */
+    display: inline-block; /* Biar garis bawahnya sepanjang tulisan aja */
+    padding-bottom: 10px;
+}
+
+/* WADAH KARTU BIAR JEJER */
+.wadah-kartu {
+    display: flex;       /* Jejer ke samping */
+    gap: 30px;           /* Jarak antar kartu */
+    justify-content: center; /* Kartu ngumpul di tengah */
+}
+
+/* DESAIN KARTUNYA SENDIRI */
+.kartu {
+    background-color: #1a1a1a; /* Hitam pekat */
+    border: 1px solid #333;    /* Garis pinggir tipis */
+    border-radius: 10px;       /* Ujung tumpul */
+    width: 300px;              /* Lebar fix kartu */
+    overflow: hidden;          /* Biar gambar gak tembus keluar border radius */
+    transition: 0.3s;          /* Animasi halus */
+}
+
+/* Efek Hover di Kartu (Keren nih) */
+.kartu:hover {
+    transform: translateY(-10px); /* Kartu melayang naik pas ditunjuk */
+    border-color: #4CAF50;        /* Pinggir jadi hijau */
+}
+
+.gambar-proyek {
+    width: 100%;       /* Gambar menuhin lebar kartu */
+    height: 180px;     /* Tinggi gambar dipatok biar rata semua */
+    object-fit: cover; /* Biar gambar gak gepeng */
+}
+
+.isi-kartu {
+    padding: 20px; /* Jarak tulisan dari pinggir kartu */
+}
+
+.isi-kartu h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.isi-kartu p {
+    color: #bbb;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.link-proyek {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* --- FOOTER & KONTAK --- */
+.seksi-kaki {
+    background-color: #000000; /* Hitam pekat kayak Navigasi atas */
+    padding: 50px 0;
+    color: white;
+    border-top: 5px solid #4CAF50; /* Garis hijau pemanis di atasnya */
+}
+
+.isi-kaki {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.kaki-kiri h3 {
+    color: #4CAF50;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.kaki-kiri p {
+    color: #bbb;
+    margin-bottom: 20px;
+    max-width: 400px; /* Biar tulisannya gak manjang banget ke kanan */
+}
+
+/* TOMBOL SOSMED JEJER */
+.sosmed-links {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-sosmed {
+    color: white;
+    border: 1px solid #4CAF50; /* Garis hijau tipis */
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn-sosmed:hover {
+    background-color: #4CAF50; /* Jadi hijau pas disorot */
+    color: black; /* Teks jadi hitam biar kebaca */
+}
+
+.kaki-kanan {
+    text-align: right;
+    color: #777; /* Abu gelap biar gak terlalu nonjol */
+    font-size: 14px;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afif Ardiyanto | Web Developer</title>
+    <!-- MANTRA LINK CSS WAJIB DI KEPALA -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 1. BAGIAN KEPALA / NAVBAR -->
+    <!-- Ingat, header harus di dalam body -->
+    <nav class="wadah-navigasi">
+        
+        <div class="pembungkus-utama"> <!-- Ini wadah tengah (container) -->
+            
+            <!-- Logo / Nama Lu -->
+            <div class="logo-saya">Afif.Dev</div>
+            
+            <!-- Menu -->
+            <ul class="menu-kanan">
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#karya">Karya</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+
+        </div>
+
+    </nav>
+
+    <!-- 2. BAGIAN UTAMA (KONTEN) -->
+    <main>
+    <!-- 1. SEKSI UTAMA (Background Hitam) -->
+    <section class="seksi-hero">
+        
+        <!-- 2. PEMBUNGKUS TENGAH (Biar lurus sama Navbar) -->
+        <div class="pembungkus-utama tata-letak-hero">
+            
+            <!-- 3. KOLOM KIRI (Tulisan) -->
+            <div class="area-teks">
+                <p class="salam">Halo, nama saya</p>
+                <h1>AFIF ARDIYANTO</h1>
+                <p class="deskripsi">
+                    Seorang Junior Web Developer yang sedang berjuang membangun aset triliunan mulai dari baris kode pertama.
+                </p>
+                <a href="#kontak" class="tombol-hijau">Hubungi Saya</a>
+            </div>
+
+            <!-- 4. KOLOM KANAN (Gambar) -->
+            <div class="area-foto">
+                <img src="assets/img/saya.JPG" alt="Afif Ardiyanto" class="foto-bulat">
+            </div>
+
+        </div>
+    </section>
+    <!-- 2. SEKSI KARYA SAYA -->
+    <!-- Kasih id="karya" biar kalau menu Karya diklik, dia meluncur ke sini -->
+    <section id="karya" class="seksi-karya">
+        
+        <div class="pembungkus-utama">
+            
+            <h2 class="judul-seksi">PROYEK TERBARU</h2>
+            
+            <!-- WADAH KARTU (Biar berjejer ke samping) -->
+            <div class="wadah-kartu">
+
+                <!-- KARTU 1: MAHABATUL MOTORS -->
+                <div class="kartu">
+                    <!-- Ganti gambarnya pake screenshot Wuling lu kemarin -->
+                    <img src="assets/img/11.jpg" alt="Proyek Wuling" class="gambar-proyek">
+                    <div class="isi-kartu">
+                        <h3>Mahabbatul Motors</h3>
+                        <p>Website landing page untuk dealer mobil listrik dengan formulir pemesanan.</p>
+                        <!-- Link ke file Wuling kemarin (Kalau ada folder lain sesuaikan) -->
+                        <a href="#" class="link-proyek">Lihat Detail -></a> 
+                    </div>
+                </div>
+
+                <!-- KARTU 2: LATIHAN MANDIRI -->
+                <div class="kartu">
+                    <img src="assets/img/22.jpg" alt="Latihan Mandiri" class="gambar-proyek">
+                    <div class="isi-kartu">
+                        <h3>Latihan HTML Dasar</h3>
+                        <p>Eksperimen pertama saya belajar struktur HTML dan CSS dasar dari nol.</p>
+                        <a href="#" class="link-proyek">Lihat Detail -></a>
+                    </div>
+                </div>
+
+                <!-- KARTU 3: CERITANYA TOKO ONLINE -->
+                <div class="kartu">
+                    <!-- Pake gambar sembarang aja dulu -->
+                    <img src="assets/img/33.jpg" alt="Toko Online" class="gambar-proyek">
+                    <div class="isi-kartu">
+                        <h3>Toko Online Impian</h3>
+                        <p>Rencana proyek masa depan aset triliunan yang akan segera dibangun.</p>
+                        <a href="#" class="link-proyek">Lihat Detail -></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    </main>
+<!-- 3. FOOTER DAN KONTAK -->
+    <!-- Kita kasih id="kontak" biar link di atas bisa nyampe sini -->
+    <footer id="kontak" class="seksi-kaki">
+        
+        <div class="pembungkus-utama isi-kaki">
+            
+            <div class="kaki-kiri">
+                <h3>Tertarik bekerja sama?</h3>
+                <p>Silakan hubungi saya di sosial media. Saya selalu terbuka untuk tawaran freelance atau full-time.</p>
+                
+                <div class="sosmed-links">
+                    <a href="#" class="btn-sosmed">Instagram</a>
+                    <a href="#" class="btn-sosmed">LinkedIn</a>
+                    <a href="#" class="btn-sosmed">Email</a>
+                </div>
+            </div>
+
+            <div class="kaki-kanan">
+                <p>&copy; 2025 Afif Ardiyanto.</p>
+                <p>Dibuat dengan kopi dan tekad baja.</p>
+            </div>
+
+        </div>
+
+    </footer>
+</body>
+</html>
