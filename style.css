@@ -246,3 +246,67 @@ h1 {
     color: #777; /* Abu gelap biar gak terlalu nonjol */
     font-size: 14px;
 }
+
+@media only screen and (max-width: 768px) {
+
+    .pembungkus-utama {
+        width: 95%;
+    }   
+
+    .pembungkus-utama {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu-kanan {  
+        width: 100%;
+        justify-content: center;
+        font-size: 14px;
+        padding: 0;
+    }
+
+    .tata-letak-hero {
+        flax-direction: column reverse;
+        text-align: center;
+        padding: 3px;
+    }
+
+    .seksi-hero {
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .tombol-hijau {
+        width: 100%;
+        display: block;
+    }
+
+    .area-teks h1{
+        font-size: 32px;
+    }
+
+    .foto-bulat {
+        width: 250px;
+        height: 250px;
+    }
+
+    .wadah-kartu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .kartu {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .isi-kaki {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .kaki-kanan {
+        text-align: center;
+    }
+}
